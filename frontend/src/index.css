@@ -685,3 +685,341 @@ body {
   background-color: #a2c9ff;
   cursor: not-allowed;
 }
+
+
+/*#####################################################################################*/
+
+
+/* Add these styles to your existing CSS file */
+
+
+/* Error container styling */
+.error-container {
+  margin: 20px auto;
+  padding: 16px;
+  background-color: #fff8f8;
+  border: 1px solid #ffcdd2;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.error-message {
+  color: #c62828;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.retry-button {
+  background-color: #6a0dad;
+  color: white;
+  margin-right: 8px;
+}
+
+.cancel-button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+/* Loading container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.loading-text {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+}
+
+.loading {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #6a0dad;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Submission options container */
+.submission-options {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.submission-prompt {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #222;
+  background: #f9f9ff;
+  padding: 16px 20px;
+  border-left: 5px solid #4a90e2;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
+  line-height: 1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInPrompt 0.8s ease forwards;
+}
+
+.submission-prompt:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Simple fade-in animation */
+@keyframes fadeInPrompt {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Button group for side-by-side buttons */
+.button-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #6a0dad; /* Purple color to match theme */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1;
+  max-width: 180px;
+}
+
+.submit-button:hover {
+  background-color: #560b94;
+}
+
+.submit-button:disabled {
+  background-color: #9d7fb6;
+  cursor: not-allowed;
+}
+
+/* Decline button styling */
+.decline-button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1;
+  max-width: 180px;
+}
+
+.decline-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Status message styling */
+.submission-status {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.submission-status p {
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.submission-status.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.submission-status.error {
+  background-color: #fdecea;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+
+
+.app-subtitle {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-weight: bold;
+  animation: fadeInSubtitle 1s ease-out 0.6s forwards;
+}
+
+
+
+
+
+
+
+/* Add these styles to your existing CSS */
+
+/* Styles for the summary toggle container */
+.summary-toggle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  background-color: #f8f4ff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-prompt {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.view-summary-button {
+  background-color: #6a3ea1;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  min-width: 150px;
+  transition: background-color 0.2s ease;
+}
+
+.view-summary-button:hover {
+  background-color: #8350c8;
+}
+
+/* Styles for the summary card */
+.summary-card {
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px; /* Fixed height for scrollability */
+  overflow: hidden;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background-color: #6a3ea1;
+  color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.summary-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.close-summary-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.close-summary-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.summary-content {
+  padding: 1rem;
+  overflow-y: auto; /* Enable scrolling */
+  flex-grow: 1;
+  line-height: 1.5;
+}
+
+/* Ensure the summary text has enough spacing */
+.summary-content p {
+  margin: 0 0 0.5rem 0;
+}
+
+/* Adjust spacing for the result title when summary is shown */
+.result-title {
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Standard button styling - ensure consistency with other buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
