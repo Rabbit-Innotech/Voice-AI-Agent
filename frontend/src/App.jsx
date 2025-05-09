@@ -914,7 +914,7 @@ function App() {
                 
                 {showSubmissionOptions && (
                   <div className="submission-options">
-                    <p className="submission-prompt">With your permission, can we save a summary to support better decisions for our communities?</p>
+                    <p className="submission-prompt">With your permission, may we save this conversation summary in our database to help us better understand and address the issue of trend persistence in our communities?</p>
                     <div className="button-group">
                       <button 
                         onClick={handleSubmit} 
